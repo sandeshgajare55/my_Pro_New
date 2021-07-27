@@ -17,9 +17,12 @@ from django.contrib import admin
 from django.urls import path
 from demo_App import views as D1
 from demo_App2 import views as D2
+from django.conf.urls import include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    #path('demoApp/', include('my_Pro_New.urls'))
     path('demo_App/', D1.show),
     path('demo_App2/', D2.show),
+
 ]
